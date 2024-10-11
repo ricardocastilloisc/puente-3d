@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: angular-app
+    env: node
+    plan: free
+    buildCommand: "npm install && npm run build --prod"
+    startCommand: "npx serve -s dist/puente-3d"
